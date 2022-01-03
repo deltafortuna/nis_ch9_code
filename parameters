@@ -1,0 +1,67 @@
+mutrate  1e-08
+useRec 1
+useHotRec 0
+recrate  1e-08
+hotrecrate 1e-06
+hotrecStart 255000
+hotrecStop  255999
+seqlength 500000
+sampsize  100
+sampfreq 1
+printhapfreq 5000
+getWindowStats 1
+windowSize 10000
+windowStep 5000
+pop_num 2
+modelMigration 0
+migration_rates 0. 0.0025 0.0025 0.
+diploid_sample 1
+trackAlleleBirths 0
+runlength 5000
+polygenicTrait 0
+baseTraitValue 0.
+alleleEffects 0.01
+dominanceEffects 0.005
+epistatic 0
+epistaticTypes 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5
+enviroSD 0.02
+DEME    /// 0
+popsize  10000
+demography 0
+birthgen 0
+extinctgen 25000
+dem_parameter 0
+dem_start_gen 0
+dem_end_gen 100000
+carrying_cap 0 0 0
+useMS 1
+useHapStartingData 0
+hapFile kb10000.0
+mscommand ./ms 20000 1 -t 200 >ms_output
+splitgenesis 0 0 0
+mergegenesis 0 0 0
+sellocus 250000 1 0.01 0.005 0
+possel 0.01 0. 0.5
+nfdsel 0. 0.
+negsel 0. 0. 275000 325000 100
+polysel 0 2 10
+DEME    /// 1
+popsize  10000
+demography 0
+birthgen 0
+extinctgen 25000
+dem_parameter 0
+dem_start_gen 0
+dem_end_gen 100000
+carrying_cap 0 0 0
+useMS 1
+useHapStartingData 0
+hapFile kb10000.1
+mscommand ./ms 20000 1 -t 200 >ms_output
+splitgenesis 1 0 40
+mergegenesis 0 0 0
+sellocus 250000 1 0.05 0.025 1
+possel 0.1 0. 0.5
+nfdsel 0. 0.
+negsel 0. 0. 275000 325000 100
+polysel 0 2 10
